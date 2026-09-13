@@ -1,4 +1,9 @@
+from student_manager import create_student_profile
+from marks_manager import enter_subject_marks
+
+
 def introscreen():
+
     print(" ")
     print("=====================================================")
     print("         STUDENT ACADEMIC PROGRESS ADVISOR           ")
@@ -28,46 +33,68 @@ def introscreen():
     print(" ")
     print("=====================================================")
     print(" ")
-    a = int(input("Enter your choice:"))
+
+    a = int(input("Enter your choice: "))
+
     print(" ")
+
     return a
 
-a = introscreen()
 
-if a == 1 :
-    print("You have selected 1. Create Student Profile")
+while True:
 
-elif a == 2 :
-    print("You have selected 2. Enter Subject Marks")
-    
-elif a == 3 :
-    print("You have selected 3. View Academic Record")
-    
-elif a == 4 :
-    print("You have selected 4. Analyze Performance")
-    
-elif a == 5 :
-    print("You have selected 5. Find Strongest / Weakest Subjects")
-    
-elif a == 6 :
-    print("You have selected 6. Set Target Marks")
-    
-elif a == 7 :
-    print("You have selected 7. Generate Study Recommendations")
-    
-elif a == 8 :
-    print("You have selected 8. Compare Current & Previous Performance")
-    
-elif a == 9 :
-    print("You have selected 9. Generate Student Report")
-    
-elif a == 10 :
-    print("You have selected 10. Class Performance Statistics")
-    
-elif a == 11 :
-    print("You have selected 11. Exit")
+    a = introscreen()
 
-else:
-    print("Error")
-    
-print(" ")
+    if a == 1:
+
+        print("You have selected 1. Create Student Profile")
+        create_student_profile()
+
+    elif a == 2:
+
+        print("You have selected 2. Enter Subject Marks")
+        enter_subject_marks()
+
+    elif a == 3:
+
+        print("You have selected 3. View Academic Record")
+
+    elif a == 4:
+
+        print("You have selected 4. Analyze Performance")
+
+    elif a == 5:
+
+        print("You have selected 5. Find Strongest / Weakest Subjects")
+
+    elif a == 6:
+
+        print("You have selected 6. Set Target Marks")
+
+    elif a == 7:
+
+        print("You have selected 7. Generate Study Recommendations")
+
+    elif a == 8:
+
+        print("You have selected 8. Compare Current & Previous Performance")
+
+    elif a == 9:
+
+        print("You have selected 9. Generate Student Report")
+
+    elif a == 10:
+
+        print("You have selected 10. Class Performance Statistics")
+
+    elif a == 11:
+
+        print("You have selected 11. Exit")
+        print("Thank you for using Student Academic Progress Advisor.")
+        break
+
+    else:
+
+        print("Error: Please enter a choice between 1 and 11.")
+
+    print(" ")

@@ -1,3 +1,5 @@
+from storage import load_students, save_students
+
 def create_student_profile():
     print(" ")
     print("=====================================================")
@@ -21,5 +23,11 @@ def create_student_profile():
     "program" : program, 
     "sub_num" : sub_num
     }
+    
+    students = load_students()
+    
+    students[reg_num] = student
+    
+    save_students(students)
+    
     return student
-
