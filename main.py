@@ -1,6 +1,6 @@
 from student_manager import create_student_profile
 from marks_manager import enter_subject_marks
-
+from acedemic_report import view_report
 
 def introscreen():
 
@@ -58,7 +58,8 @@ while True:
     elif a == 3:
 
         print("You have selected 3. View Academic Record")
-
+        view_report()
+        
     elif a == 4:
 
         print("You have selected 4. Analyze Performance")
