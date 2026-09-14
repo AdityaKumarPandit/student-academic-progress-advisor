@@ -17,3 +17,34 @@ def enter_subject_marks():
     print(f"Number of Subjects: {student['sub_num']}")
 
     confirm = input("Is this the correct student? (y/n): ")
+
+    if confirm == "y":
+
+        subjects = {}
+
+        for i in range(student["sub_num"]):
+
+            print(f"\nSubject {i + 1}")
+
+            sub_name = input("Enter Subject Name: ")
+            max_marks = int(input("Enter Maximum Marks: "))
+            sub_marks = int(input("Enter Marks Obtained: "))
+
+            subjects[sub_name] = {
+                "max_marks": max_marks,
+                "marks_obtained": sub_marks
+            }
+
+        student["subjects"] = subjects
+
+        save_students(students)
+
+        print("Subject marks saved successfully.")
+
+    elif confirm == "n":
+
+        print("Returning to main menu.")
+
+    else:
+
+        print("Please answer only with 'y' or 'n'.")

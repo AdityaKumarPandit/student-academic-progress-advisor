@@ -4,7 +4,25 @@
         "reg_num": "26BCE10029",
         "semester": 1,
         "program": "B.Tech",
-        "sub_num": 4
+        "sub_num": 4,
+        "subjects": {
+            "Maths": {
+                "max_marks": 50,
+                "marks_obtained": 30
+            },
+            "EVS": {
+                "max_marks": 50,
+                "marks_obtained": 35
+            },
+            "CSE": {
+                "max_marks": 50,
+                "marks_obtained": 40
+            },
+            "ENG": {
+                "max_marks": 50,
+                "marks_obtained": 40
+            }
+        }
     },
     "26BCY10005": {
         "name": "Ayushman Sahu",

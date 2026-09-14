@@ -90,7 +90,9 @@ while True:
     elif a == 11:
 
         print("You have selected 11. Exit")
+        print(" ")
         print("Thank you for using Student Academic Progress Advisor.")
+        print(" ")
         break
 
     else:
