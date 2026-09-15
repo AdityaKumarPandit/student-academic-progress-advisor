@@ -1,6 +1,7 @@
 from student_manager import create_student_profile
 from marks_manager import enter_subject_marks
 from acedemic_report import view_report
+from performance_analysis import performance_analysis_report
 
 def introscreen():
 
@@ -63,7 +64,8 @@ while True:
     elif a == 4:
 
         print("You have selected 4. Analyze Performance")
-
+        performance_analysis_report()
+        
     elif a == 5:
 
         print("You have selected 5. Find Strongest / Weakest Subjects")
@@ -94,6 +96,7 @@ while True:
         print(" ")
         print("Thank you for using Student Academic Progress Advisor.")
         print(" ")
+        print("=====================================================")
         break
 
     else:

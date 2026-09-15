@@ -6,11 +6,13 @@ def create_student_profile():
     print("              CREATE STUDENT PROFILE                 ")
     print("=====================================================")
     print(" ")
+    
     name = input("Enter Student Name: ")
     reg_num = input("Enter Registration Number: ")
     semester = int(input("Enter Semester: "))
     program = input("Enter Program: ")
     sub_num = int(input("Enter Number of Subjects: "))
+    
     print(" ")
     print("=====================================================")
     print("       Student profile created successfully.         ")
