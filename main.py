@@ -2,6 +2,7 @@ from student_manager import create_student_profile
 from marks_manager import enter_subject_marks
 from acedemic_report import view_report
 from performance_analysis import performance_analysis_report
+from Edit import edit_profile
 
 def introscreen():
 
@@ -18,23 +19,19 @@ def introscreen():
     print(" ")
     print("4. Analyze Performance")
     print(" ")
-    print("5. Find Strongest / Weakest Subjects")
+    print("5. Edit Student Details")
     print(" ")
-    print("6. Set Target Marks")
+    print("6. Update Subject Marks")
     print(" ")
-    print("7. Generate Study Recommendations")
+    print("7. Delete Student Record")
     print(" ")
-    print("8. Compare Current & Previous Performance")
+    print("8. Search Student")
     print(" ")
-    print("9. Generate Student Report")
-    print(" ")
-    print("10. Class Performance Statistics")
-    print(" ")
-    print("11. Exit")
+    print("9. Exit")
     print(" ")
     print("=====================================================")
     print(" ")
-
+    
     a = int(input("Enter your choice: "))
 
     print(" ")
@@ -68,31 +65,24 @@ while True:
         
     elif a == 5:
 
-        print("You have selected 5. Find Strongest / Weakest Subjects")
-
+        print("You have selected 5. Edit Student Details")
+        edit_profile()
+        
     elif a == 6:
 
-        print("You have selected 6. Set Target Marks")
+        print("You have selected 6. Update Subject Marks")
 
     elif a == 7:
 
-        print("You have selected 7. Generate Study Recommendations")
+        print("You have selected 7. Delete Student Record")
 
     elif a == 8:
 
-        print("You have selected 8. Compare Current & Previous Performance")
+        print("You have selected 8. Search Student")
 
     elif a == 9:
 
-        print("You have selected 9. Generate Student Report")
-
-    elif a == 10:
-
-        print("You have selected 10. Class Performance Statistics")
-
-    elif a == 11:
-
-        print("You have selected 11. Exit")
+        print("You have selected 9. Exit")
         print(" ")
         print("Thank you for using Student Academic Progress Advisor.")
         print(" ")
@@ -101,6 +91,6 @@ while True:
 
     else:
 
-        print("Error: Please enter a choice between 1 and 11.")
+        print("Error: Please enter a choice between 1 and 9.")
 
     print(" ")
