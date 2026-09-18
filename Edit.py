@@ -55,16 +55,25 @@ def edit_profile():
     
     elif choice == "2":
         print("You have Selected 2. Semester")
+        
+        print(f"Current Semester = {student["semester"]}")
+        new_semester = input("Enter the New Semester : ")
+        student["semester"] = new_semester 
+        save_students(students)
+        print("Student's Semester Successfully saved.")
     
     elif choice == "3":
         print("You have selected 3. Program")
         
+        print(f"Current Program = {student["program"]}")
+        new_program = input("Enter the New Program : ")
+        student["program"] = new_program
+        save_students(students)
+        print("Student New Program Successfully saved.")
+        
     elif choice == "4":
-        print("You have Selected 4. Back to main menu")
+        print("Returing to the Main Menu :)")
+        return
     
     else:
         print("Error, Please select from 1-4 only.")
-
-    
-        
-edit_profile()

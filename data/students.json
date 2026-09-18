@@ -1,6 +1,6 @@
 {
     "26BCE10029": {
-        "name": "ADITYA KUMAR PANDIT",
+        "name": "ADITYA KR PANDIT",
         "reg_num": "26BCE10029",
         "semester": 1,
         "program": "B.Tech",
@@ -37,5 +37,12 @@
                 "marks_obtained": 30
             }
         }
+    },
+    "26BAS10001": {
+        "name": "Kishore Kumar",
+        "reg_num": "26BAS10001",
+        "semester": 1,
+        "program": "btech",
+        "sub_num": 4
     }
 }
